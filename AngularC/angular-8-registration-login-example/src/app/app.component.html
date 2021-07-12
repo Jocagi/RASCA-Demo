@@ -1,0 +1,34 @@
+﻿<!-- nav -->
+<nav class="navbar navbar-expand navbar-dark bg-primary"  *ngIf="currentUser">
+    <div class="navbar-nav">
+        <a class="nav-item nav-link" routerLink="/">Mis Actividades</a>
+        <a class="nav-item nav-link" routerLink="/">Actividades</a>
+        <a class="nav-item nav-link" routerLink="/">Historial</a>
+        <a class="nav-item nav-link" routerLink="/">Mi Perfil</a>
+        <a class="nav-item nav-link" (click)="logout()">Cerrar Sesion</a>
+        
+    </div>
+</nav>
+
+<!-- main app container -->
+<div class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <!--<div class="col-sm-6 offset-sm-3">-->
+            <div>
+                <alert></alert>
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- credits -->
+<!--<div class="text-center">
+    <p>
+        <a href="https://jasonwatmore.com/post/2019/06/10/angular-8-user-registration-and-login-example-tutorial" target="_top">Angular 8 - User Registration and Login Example & Tutorial</a>
+    </p>
+    <p>
+        <a href="https://jasonwatmore.com" target="_top">JasonWatmore.com</a>
+    </p>
+</div>-->
